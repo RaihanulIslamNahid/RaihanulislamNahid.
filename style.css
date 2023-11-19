@@ -1,0 +1,118 @@
+*{
+    margin: 0;
+    font-family: 'Sora', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+body{
+    background: rgb(24, 23, 26);
+    color: white;
+}
+
+#portrait-container{
+    position: absolute;
+    top: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 999;
+    text-align: center;
+}
+
+#portrait{
+    border-radius: 50%;
+    filter: grayscale(1);
+}
+
+#anchor{
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 150px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+    text-align: center;
+    background: rgb(29, 27, 34);
+    border-radius: 50%;
+}
+
+
+.link-container{
+    transform-origin: 50% 50%;
+    translate: -50% -50%;
+    z-index: 1;
+    position: absolute;
+    width: calc(100vw - 48px);
+    max-width: 420px;
+    height: 60px;
+    border-radius: 6px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 8px;
+
+    pointer-events: none;
+    text-decoration: none;
+
+}
+
+.link{
+    background: none;
+    color: black;
+    font-size: 16px;
+    font-weight: 500;
+    text-decoration: none;
+    letter-spacing: 0.5px;
+}
+
+h1{
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 150%;
+    letter-spacing: 0.5px;
+}
+
+p{
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 150%;
+}
+
+#debugCircle{
+    height: 100px;
+    width: 100px;
+    
+    position: absolute;
+    top: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+
+    z-index: 999;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#indicator{
+    position: relative;
+    height: 6px;
+    width: 6px;
+    background: white;
+    border-radius: 50%;
+    display: none;
+}
+
+#permission{
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 6px 10px;
+    font-size: 12px;
+    font-weight: 500;
+    border-radius: 6px;
+    border: solid 1px rgb(192, 192, 192);
+}

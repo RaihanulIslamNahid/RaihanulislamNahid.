@@ -1,0 +1,41 @@
+@import "compass/css3";
+
+
+body{
+    font-family: HelveticaNeue, Helvetica, Arial, sans-serif;
+    margin: 0;
+    background-color: black;
+}
+
+.container{
+  position:absolute;
+  top:48%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  max-width: 90%;
+}
+
+.font{
+    color: blue;
+    background:black;
+    width: 100%;
+
+    text-transform: uppercase;
+    letter-spacing: -10px;
+    font-weight: bold;
+    font-size: 160px;
+    line-height: 100%;
+    letter-spacing: 0em;
+    transition : filter 200ms ease-out, color 200ms ease-out;  
+}
+
+.container:hover{
+    filter: url(#squiggle-max);    
+}
+
+.font:hover{
+    color: white;
+    transition : filter 200ms ease-out, color 400ms ease-out;  
+    filter: blur(5px) contrast(2) brightness(500%);
+    cursor: pointer;
+}
